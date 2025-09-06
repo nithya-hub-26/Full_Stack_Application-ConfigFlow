@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "resourceType": "DCM",
+  "protectionSettings": {
+    "protectionScheme": "NONE",
+    "resResStreamingScheme": "NOT_APPLICABLE",
+    "failOverOnDeviceNotResponding": false,
+    "failOverOnDeviceOperationalFailure": true,
+    "failOverOnIpRouterConnectedPortsDown": true,
+    "failOverOnInputTSLossOnNextStage": false,
+    "channelFailOverOnSDIStreamLoss": false,
+    "channelFailOverOnVideoInputFreeze": false,
+    "automaticallyRecoverHealthyDevices": false,
+    "ipRouterFailureDetectionDelay": 5,
+    "manualSwitchOverDelay": 15,
+    "minimumAutoSwitchOverDelay": 4000,
+    "ipRouterPortControl": "NONE"
+  },
+  "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+  "allocationHints": {
+    "deviceAllocationOrder": "LOAD_BALANCED",
+    "outputPort": "FIRST_BOARD_FIRST_PORT"
+  }
+}
