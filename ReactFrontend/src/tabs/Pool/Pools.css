@@ -1,0 +1,79 @@
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+  }
+
+  /* Ensure table layout is responsive */
+  .MuiTable-root {
+    width: 100%;
+    min-width: 600px; /* Ensures the table doesn't shrink too much */
+  }
+
+
+  .MuiTableBody-root .MuiTableRow-root {
+    background-color: white;  
+  }
+
+  .MuiTableBody-root .MuiTableRow-root:hover {
+    background-color: #f5f5f5;  
+  }
+
+  .add-pool-button.MuiButton-root {
+    background-color: #ffc022;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px; 
+    cursor: pointer;
+    padding: 8px 16px;
+    width: auto;  /* Ensure button width is only as wide as its content */
+  }
+
+  .add-pool-button.MuiButton-root:hover {
+    background-color: #eba903;
+  }
+
+
+  .cancel-button.MuiButton-root{
+    color: black;
+    width: auto;
+  }
+  
+  .add-new-button.MuiButton-root {
+    background-color: #ffc022;
+    color: black;
+    width: auto;
+  }
+  
+  .add-new-button.MuiButton-root:hover {
+    background-color: #eba903;
+  }
+
+  .del-button:hover{
+    color: rgb(209, 54, 54) !important;
+  }
+
+@media (max-width: 768px) {
+
+  .MuiTable-root {
+      min-width: 100%; /* Ensures it fits within the container */
+  }
+
+  .MuiTableCell-root {
+      font-size: 12px; 
+      padding: 8px;
+  }
+
+  .add-pool-button.MuiButton-root {
+      font-size: 11px; 
+      padding: 6px 12px;
+  }
+
+  .del-button {
+      font-size: 20px !important;
+  }
+}

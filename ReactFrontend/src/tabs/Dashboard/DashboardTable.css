@@ -1,0 +1,51 @@
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  .MuiTableCell-root {
+    padding: 12px;
+    font-size: 14px;
+    word-break: break-word;
+  }
+  
+  .MuiTableHead-root {
+    background-color: #1b202c;
+  }
+
+  .MuiTableHead-root .MuiTableCell-root {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .MuiTableBody-root .MuiTableRow-root:hover {
+    background-color: #f5f5f5;  
+  }
+
+  .dashboard-row {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  /* Make table responsive for smaller screens */
+@media (max-width: 768px) {
+  .MuiTableCell-root {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .MuiTableHead-root .MuiTableCell-root {
+      font-size: 14px;
+  }
+
+  .table-container {
+      overflow-x: scroll; /* Enable horizontal scrolling */
+  }
+}
+
+
+  
