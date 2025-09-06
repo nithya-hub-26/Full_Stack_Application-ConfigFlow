@@ -1,0 +1,174 @@
+{
+  "name": "Linear_Transcoding_API1",
+  "slateSettings": {
+    "mode": "Enabled",
+    "slateTriggers": [
+      {
+        "trigger": "Manual",
+        "slateName": "slate1"
+      }
+    ]
+  },
+  "serviceSettings": {
+    "useInSDTa": false,
+    "adaptSiTables": "Auto",
+    "maxBitrateDescrMode": "Disabled",
+    "maxBitrateDescrValue": 50000000,
+    "pcrLocationMode": "FollowInput",
+    "pcrInterval": 100,
+    "processingDelay": 5000
+  },
+  "serviceLossTriggers": {
+    "VideoInputLoss": true,
+    "AudioInputLoss": true,
+    "FormatMismatch": true,
+    "ProcessingError": true,
+    "VideoFreeze": false
+  },
+  "scte104Settings": {
+    "scte35Bandwidth": {
+      "max": 90240,
+      "reserveBandwidth": true,
+      "heartbeatInterval": 3600
+    },
+    "maxAcceptedPreRoll": 65,
+    "minOutputPreRoll": 6000,
+    "idrFrames": [
+      "SpliceStart"
+    ]
+  },
+  "scte35Settings": {
+    "spliceInsert": false,
+    "timeSignal": false,
+    "segmentationTypes": [],
+    "tierSettings": {
+      "segmentationTiers": [
+        {
+          "tierSetting": 151
+        }
+      ],
+      "defaultTiers": [
+        {
+          "tierSetting": 151
+        }
+      ],
+      "providerTiers": [
+        {
+          "providerId": 4294967295,
+          "tiers": [
+            {
+              "tierSetting": 151
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "serviceBackupSettings": {
+    "serviceBackupMode": "NonRevertive",
+    "delayMainToBackup": 10,
+    "delayBackupToMain": 10
+  },
+  "videoDecodeSettings": {
+    "mctfMode": "Disabled",
+    "mctfStrength": 4,
+    "preDeblockingFilter": "Disabled",
+    "freezeFrameDetection": "Disabled",
+    "freezeFrameThreshold": 5000,
+    "topLineBlanking": 0,
+    "horizontalSharpness": 12,
+    "verticalSharpness": 18,
+    "itDetection": "Disabled",
+    "videoInputLossMode": "BlackFrames",
+    "latencyTolerance": "Low",
+    "afdArSourceMode": "Auto",
+    "arSourceSelection": "14:9",
+    "afdSourceSelection": "16:9_ShootAndProtect_4:3",
+    "detailEnhancement": "Disabled",
+    "detailEnhancementCustom": 0
+  },
+  "videoEncodeSettings": {
+    "videoFormat": "HD_Transcode",
+    "defaultVideoPid": 8190,
+    "codec": "H.264",
+    "profile": "Main",
+    "frameFieldEncoding": "MBAFF",
+    "resolutionMode": "Manual",
+    "hResolution": "960",
+    "vResolution": "1080",
+    "frameRate": "25",
+    "scanType": "progressive",
+    "scaling": "544",
+    "cpbDelayMode": "Auto",
+    "maxCpbDelay": 2500,
+    "svqMode": "Disabled",
+    "vqOptimization": "Subjective",
+    "highDensity": false,
+    "deblockingSettings": {
+      "deblockingFilterMode": "Static",
+      "alphaTcOffset": 0,
+      "betaOffset": 0
+    },
+    "afdArOutputMode": "Auto",
+    "afdArOutputAr": "4:3",
+    "gopMode": "Custom",
+    "gopSize": 600,
+    "maxGopSize": 1200,
+    "gopBPictures": 7,
+    "gopHierarchical": true,
+    "idrInsertion": 0,
+    "dynamicRange": "Auto"
+  },
+  "closedCaptions": {
+    "closedCaptionSourceMode": "Auto",
+    "closedCaptionSourcePid": 8190,
+    "closedCaptionSourceLanguage": "",
+    "captionServiceDescr": {
+      "csdMode": "Auto",
+      "captionServices": [
+        {
+          "line21": true,
+          "field": "Field1",
+          "captionServiceNumber": 63,
+          "language": "",
+          "easyReader": false,
+          "wideAspectRatio": false
+        }
+      ]
+    },
+    "closedCaptionOutput": "CEA-708"
+  },
+  "rateControl": {
+    "rateMode": "CBR",
+    "esRate": 0,
+    "svqQualityLevel": 960,
+    "svqQualityLevelMin": 960,
+    "svqQualityLevelMax": 960,
+    "dataAggregationWindow": 1440,
+    "targetConformanceRate": 75,
+    "vqTarget": {
+      "vqTarget": 100
+    }
+  },
+  "advancedOutputSettings": {
+    "streamingMode": "On"
+  },
+  "densityId": "00000000-0000-0000-0000-000000000000",
+  "configUsages": [
+    {
+      "lineupId": "7605aec7-c79c-4f4e-8a44-7279aec5e155",
+      "lineupName": "DUL-1001",
+      "configId": "7605aec7-c79c-4f4e-8a44-7279aec5e155",
+      "configName": "DUL-1001",
+      "configState": "INACTIVE",
+      "configValidity": "VALID"
+    }
+  ],
+  "videoQualityMetrics": {
+    "vqmMode": "Disabled",
+    "fileOutput": "Disabled",
+    "monitoringWindow": 20000,
+    "PSNRAlarmThreshold": 0,
+    "pVMAFAlarmThreshold": 0
+  }
+}

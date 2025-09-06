@@ -1,0 +1,146 @@
+{
+  "name": "Audio_Transcode_Template_API1",
+  "audioDecodes": [
+    {
+      "id": "abc-123",
+      "decodeType": "MPEG1L2",
+      "channelConfig": "Stereo",
+      "inputLossMode": "NoBitrate",
+      "trackType": "StreamType",
+      "streamType": "MPEG1L2",
+      "strictStreamType": true,
+      "language": "kmd",
+      "strictLanguage": true,
+      "sourcePid": 8190,
+      "componentTag": 255
+    }
+  ],
+  "audioEncodes": [
+    {
+      "profileId": "audio-1",
+      "decodeId": "abc-123",
+      "xcodeMode": "Transcode",
+      "encodeType": "AAC_LC",
+      "bitrate": 1024,
+      "sampleRate": "48",
+      "channelConfig": "Mono",
+      "targetPid": 8190,
+      "aligned": true,
+      "framesPerPES": "1",
+      "lipSync": 0,
+      "modifyAudioDescriptor": true,
+      "outputLanguage": "",
+      "audioOutputType": "Undefined",
+      "preProcessing": {
+        "monoDownMix": "Sum",
+        "stereoDownMix": "Auto",
+        "drcMode": "Line",
+        "compressionCut": "0.0",
+        "compressionBoost": "0.0",
+        "errorConcealment": true
+      },
+      "aacProcessing": {
+        "bitStreamMode": "MPEG2-ADTS",
+        "ADTS_CRC": true,
+        "programNumber": 8
+      },
+      "dolbyProcessing": {
+        "metaDataMode": "Auto",
+        "drcOverride": true,
+        "dynamicControlLine": "FilmStandard",
+        "dynamicControlRF": "FilmStandard",
+        "dialNormOverride": true,
+        "mainDialNorm": -1,
+        "auxDialNorm": -1,
+        "drcMode": "Line",
+        "compressionCut": "0.0",
+        "compressionBoost": "0.0",
+        "bitstreamMode": "CompleteMain",
+        "surroundMode": "NotIndicated",
+        "copyright": true,
+        "original": true,
+        "mainRoomType": "NotIndicated",
+        "mainPeakMixingLevel": 111,
+        "auxRoomType": "NotIndicated",
+        "auxPeakMixingLevel": 111,
+        "lfeChannelEnable": true,
+        "lfeLowPassFilter": true,
+        "surroundPhaseShift": true,
+        "surroundChannelAttenuation": true,
+        "xbsiDownMixToStereo": "NotIndicated",
+        "xbsiLTRTCenterMixLevel": "3.0",
+        "xbsiLTRTSurroundMixLevel": "-1.5",
+        "xbsiLOROCenterMixLevel": "3.0",
+        "xbsiLOROSurroundMixLevel": "-1.5",
+        "xbsiSurroundExMode": "NotIndicated"
+      },
+      "mpegl2Processing": {
+        "autoJointStereo": true,
+        "programNumber": 8
+      },
+      "alc": {
+        "transientFactor": "1",
+        "inputGain": 200,
+        "target": 0,
+        "truePeak": true,
+        "alcMode": "Bypass",
+        "limiter": "Bypass",
+        "maxGain": 200,
+        "attackCoefficient": "0",
+        "backgroundLoudness": 0,
+        "integratedMeasurementDuration": 60,
+        "noiseThreshold": 0,
+        "limiterReleaseCoefficient": "0",
+        "maxDeviation": 50,
+        "limiterRefLevel": 0,
+        "leveler": "Enable",
+        "compensationDelay": "100",
+        "releaseTime": 1000
+      },
+      "addUnrefPCR": false
+    }
+  ],
+
+  "audioServiceSettings": {
+    "serviceSettings": {
+      "useInSDTa": false,
+      "adaptSiTables": "Auto",
+      "maxBitrateDescrMode": "Disabled",
+      "maxBitrateDescrValue": 50000000,
+      "pcrLocationMode": "FollowInput",
+      "pcrInterval": 100,
+      "processingDelay": 5000
+    },
+    "serviceLossTriggers": {
+      "VideoInputLoss": true,
+      "AudioInputLoss": true,
+      "FormatMismatch": true,
+      "ProcessingError": true,
+      "VideoFreeze": false
+    },
+    "serviceBackupSettings": {
+      "serviceBackupMode": "NonRevertive",
+      "delayMainToBackup": 10,
+      "delayBackupToMain": 10
+    },
+    "boundaryPlacement": {
+      "enableFragments": true,
+      "fragmentDurationMillis": 20000,
+      "enableSegments": true,
+      "segmentDurationMillis": 20000
+    },
+    "advancedOutputSettings": {
+      "streamingMode": "On"
+    }
+  },
+  "configUsages": [
+    {
+      "lineupId": "7605aec7-c79c-4f4e-8a44-7279aec5e155",
+      "lineupName": "DUL-1001",
+      "configId": "7605aec7-c79c-4f4e-8a44-7279aec5e155",
+      "configName": "DUL-1001",
+      "configState": "INACTIVE",
+      "configValidity": "VALID"
+    }
+  ]
+}
