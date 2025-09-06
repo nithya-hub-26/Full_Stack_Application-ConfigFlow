@@ -1,0 +1,7 @@
+2025-04-08 14:59:21,109 - INFO - Starting the get_dashboards process.
+2025-04-08 14:59:21,110 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/preferences
+2025-04-08 14:59:22,789 - WARNING - Unauthorized access. Status: 401. Regenerating token...
+2025-04-08 14:59:22,790 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/authenticate
+2025-04-08 14:59:24,797 - INFO - New custom token generated successfully.
+2025-04-08 14:59:24,798 - INFO - Custom token saved to token.txt.
+2025-04-08 14:59:24,798 - INFO - Finished the get_dashboards process.

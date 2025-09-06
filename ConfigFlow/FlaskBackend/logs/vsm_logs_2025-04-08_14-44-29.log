@@ -1,0 +1,2 @@
+2025-04-08 14:44:29,783 - INFO - Starting the generate_token process.
+2025-04-08 14:44:29,794 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/authenticate

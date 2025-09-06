@@ -1,0 +1,34 @@
+2025-04-01 15:49:19,452 - INFO - Finished the delete lineup config process.
+2025-04-01 15:49:19,454 - INFO - Finished the delete lineup folders process.
+2025-04-01 15:49:19,455 - INFO - Finished the delete pool process.
+2025-04-01 15:49:19,456 - INFO - Finished the delete lineup process.
+2025-04-01 15:49:19,459 - INFO - Finished the get lineup configs process.
+2025-04-01 15:49:19,461 - INFO - Finished the get_lineup_folders process.
+2025-04-01 15:49:19,462 - INFO - Finished the get_lineups process.
+2025-04-01 15:49:19,463 - INFO - Finished the get_logs process.
+2025-04-01 15:49:19,463 - INFO - Finished the pools process.
+2025-04-01 15:49:19,464 - INFO - Finished the get_resources process.
+2025-04-01 15:49:19,465 - INFO - Finished the get_sources process.
+2025-04-01 15:49:19,467 - INFO - Finished the post_lineup_config process.
+2025-04-01 15:49:19,467 - INFO - Finished the post_lineup_folders process.
+2025-04-01 15:49:19,468 - INFO - Finished the post_lineups process.
+2025-04-01 15:49:19,469 - INFO - Finished the post_pools process.
+2025-04-01 15:49:19,470 - INFO - Finished the put_lineups process.
+2025-04-01 15:49:19,470 - INFO - Finished the put_lineup_config process.
+2025-04-01 15:49:19,471 - INFO - Finished the put_lineup_folders process.
+2025-04-01 15:49:19,472 - INFO - Finished the put_pools process.
+2025-04-01 15:49:19,515 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 15:49:19,515 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 15:49:19,516 - INFO -  * Restarting with stat
+2025-04-01 18:41:07,134 - INFO -  * Restarting with stat
+2025-04-01 18:41:17,063 - INFO -  * Restarting with stat
+2025-04-01 18:45:09,968 - INFO -  * Restarting with stat
+2025-04-01 18:53:36,275 - INFO -  * Restarting with stat
+2025-04-01 18:55:19,900 - INFO -  * Restarting with stat
+2025-04-01 18:55:36,457 - INFO -  * Restarting with stat
+2025-04-01 18:58:27,767 - INFO -  * Restarting with stat
+2025-04-01 19:07:20,945 - INFO -  * Restarting with stat
+2025-04-01 19:17:29,507 - INFO -  * Restarting with stat
+2025-04-01 19:28:21,056 - INFO -  * Restarting with stat
+2025-04-02 11:13:51,403 - INFO -  * Restarting with stat

@@ -1,0 +1,28 @@
+2025-03-28 14:30:06,956 - INFO - Finished the delete lineup folders process.
+2025-03-28 14:30:06,958 - INFO - Finished the delete pool process.
+2025-03-28 14:30:06,959 - INFO - Finished the delete lineup process.
+2025-03-28 14:30:06,962 - INFO - Finished the get lineup configs process.
+2025-03-28 14:30:06,964 - INFO - Finished the get_lineup_folders process.
+2025-03-28 14:30:06,965 - INFO - Finished the get_lineups process.
+2025-03-28 14:30:06,967 - INFO - Finished the get_logs process.
+2025-03-28 14:30:06,968 - INFO - Finished the pools process.
+2025-03-28 14:30:07,004 - INFO - Finished the get_resources process.
+2025-03-28 14:30:07,006 - INFO - Finished the post_lineup_config process.
+2025-03-28 14:30:07,007 - INFO - Finished the post_lineup_folders process.
+2025-03-28 14:30:07,010 - INFO - Finished the post_lineups process.
+2025-03-28 14:30:07,011 - INFO - Finished the post_pools process.
+2025-03-28 14:30:07,013 - INFO - Finished the put_lineups process.
+2025-03-28 14:30:07,015 - INFO - Finished the put_lineup_folders process.
+2025-03-28 14:30:07,016 - INFO - Finished the put_pools process.
+2025-03-28 14:30:07,122 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-28 14:30:07,122 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 14:30:07,125 - INFO -  * Restarting with stat
+2025-03-28 14:37:26,869 - INFO -  * Restarting with stat
+2025-03-28 14:43:07,176 - INFO -  * Restarting with stat
+2025-03-28 15:25:55,699 - INFO -  * Restarting with stat
+2025-03-28 16:37:59,307 - INFO -  * Restarting with stat
+2025-03-28 16:56:25,693 - INFO -  * Restarting with stat
+2025-03-28 18:33:58,521 - INFO -  * Restarting with stat
+2025-03-28 18:37:04,689 - INFO -  * Restarting with stat
+2025-03-28 18:37:42,720 - INFO -  * Restarting with stat

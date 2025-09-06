@@ -1,0 +1,22 @@
+2025-03-27 13:01:39,408 - INFO - Finished the delete lineup folders process.
+2025-03-27 13:01:39,409 - INFO - Finished the delete pool process.
+2025-03-27 13:01:39,410 - INFO - Finished the delete lineup process.
+2025-03-27 13:01:39,412 - INFO - Finished the get lineup configs process.
+2025-03-27 13:01:39,414 - INFO - Finished the get_lineup_folders process.
+2025-03-27 13:01:39,414 - INFO - Finished the get_lineups process.
+2025-03-27 13:01:39,415 - INFO - Finished the get_logs process.
+2025-03-27 13:01:39,416 - INFO - Finished the pools process.
+2025-03-27 13:01:39,420 - INFO - Finished the post_lineup_config process.
+2025-03-27 13:01:39,421 - INFO - Finished the post_lineup_folders process.
+2025-03-27 13:01:39,422 - INFO - Finished the post_lineups process.
+2025-03-27 13:01:39,423 - INFO - Finished the post_pools process.
+2025-03-27 13:01:39,424 - INFO - Finished the put_lineups process.
+2025-03-27 13:01:39,426 - INFO - Finished the put_lineup_folders process.
+2025-03-27 13:01:39,427 - INFO - Finished the put_pools process.
+2025-03-27 13:01:39,468 - WARNING -  * Debugger is active!
+2025-03-27 13:01:39,472 - INFO -  * Debugger PIN: 627-281-010
+2025-03-27 13:01:47,279 - INFO - Starting the post_lineup_config process.
+2025-03-27 13:01:47,280 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6/configs
+2025-03-27 13:01:48,922 - ERROR - Request failed. Status: 400. Reason: Bad Request
+2025-03-27 13:01:48,924 - INFO - 127.0.0.1 - - [27/Mar/2025 13:01:48] "POST /create-lineup-config HTTP/1.1" 200 -
+2025-03-27 13:03:58,680 - INFO -  * Detected change in 'C:\\Users\\nkalyani\\PycharmProjects\\FlaskBackend\\scripts\\post_lineup_config.py', reloading

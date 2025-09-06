@@ -1,0 +1,26 @@
+2025-04-02 12:32:08,770 - INFO - Finished the delete lineup config process.
+2025-04-02 12:32:08,771 - INFO - Finished the delete lineup folders process.
+2025-04-02 12:32:08,773 - INFO - Finished the delete pool process.
+2025-04-02 12:32:08,774 - INFO - Finished the delete lineup process.
+2025-04-02 12:32:08,781 - INFO - Finished the get lineup configs process.
+2025-04-02 12:32:08,782 - INFO - Finished the get_lineup_folders process.
+2025-04-02 12:32:08,783 - INFO - Finished the get_lineups process.
+2025-04-02 12:32:08,785 - INFO - Finished the get_logs process.
+2025-04-02 12:32:08,785 - INFO - Finished the pools process.
+2025-04-02 12:32:08,787 - INFO - Finished the get_resources process.
+2025-04-02 12:32:08,788 - INFO - Finished the get_sources process.
+2025-04-02 12:32:08,789 - INFO - Finished the post_lineup_config process.
+2025-04-02 12:32:08,790 - INFO - Finished the post_lineup_folders process.
+2025-04-02 12:32:08,791 - INFO - Finished the post_lineups process.
+2025-04-02 12:32:08,792 - INFO - Finished the post_pools process.
+2025-04-02 12:32:08,792 - INFO - Finished the put_lineups process.
+2025-04-02 12:32:08,793 - INFO - Finished the put_lineup_config process.
+2025-04-02 12:32:08,794 - INFO - Finished the put_lineup_folders process.
+2025-04-02 12:32:08,794 - INFO - Finished the put_pools process.
+2025-04-02 12:32:08,826 - WARNING -  * Debugger is active!
+2025-04-02 12:32:08,829 - INFO -  * Debugger PIN: 627-281-010
+2025-04-02 12:32:14,907 - INFO - 127.0.0.1 - - [02/Apr/2025 12:32:14] "OPTIONS /update-lineup-config/73868200-fafe-4c66-b557-86fed01ecaf4 HTTP/1.1" 200 -
+2025-04-02 12:32:14,914 - INFO - Starting the put_lineup_config process.
+2025-04-02 12:32:14,915 - ERROR - Missing config name to update
+2025-04-02 12:32:14,916 - INFO - 127.0.0.1 - - [02/Apr/2025 12:32:14] "[31m[1mPUT /update-lineup-config/73868200-fafe-4c66-b557-86fed01ecaf4 HTTP/1.1[0m" 400 -
+2025-04-02 12:32:55,237 - INFO -  * Detected change in 'C:\\Users\\nkalyani\\PycharmProjects\\FlaskBackend\\scripts\\put_lineup_config.py', reloading

@@ -1,0 +1,2519 @@
+2025-03-28 11:19:43,795 - INFO - Finished the delete lineup folders process.
+2025-03-28 11:19:43,797 - INFO - Finished the delete pool process.
+2025-03-28 11:19:43,799 - INFO - Finished the delete lineup process.
+2025-03-28 11:19:43,805 - INFO - Finished the get lineup configs process.
+2025-03-28 11:19:43,809 - INFO - Finished the get_lineup_folders process.
+2025-03-28 11:19:43,811 - INFO - Finished the get_lineups process.
+2025-03-28 11:19:43,813 - INFO - Finished the get_logs process.
+2025-03-28 11:19:43,815 - INFO - Finished the pools process.
+2025-03-28 11:19:43,817 - INFO - Finished the post_lineup_config process.
+2025-03-28 11:19:43,819 - INFO - Finished the post_lineup_folders process.
+2025-03-28 11:19:43,822 - INFO - Finished the post_lineups process.
+2025-03-28 11:19:43,824 - INFO - Finished the post_pools process.
+2025-03-28 11:19:43,826 - INFO - Finished the put_lineups process.
+2025-03-28 11:19:43,828 - INFO - Finished the put_lineup_folders process.
+2025-03-28 11:19:43,831 - INFO - Finished the put_pools process.
+2025-03-28 11:19:43,911 - WARNING -  * Debugger is active!
+2025-03-28 11:19:43,920 - INFO -  * Debugger PIN: 627-281-010
+2025-03-28 11:21:18,238 - INFO - 127.0.0.1 - - [28/Mar/2025 11:21:18] "POST /generate-token HTTP/1.1" 200 -
+2025-03-28 11:21:21,278 - INFO - 127.0.0.1 - - [28/Mar/2025 11:21:21] "GET /list-dashboards HTTP/1.1" 200 -
+2025-03-28 11:22:09,677 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:22:09,678 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:22:11,231 - INFO - Request successful. Response status: 200
+2025-03-28 11:22:11,231 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:22:11,233 - INFO - 127.0.0.1 - - [28/Mar/2025 11:22:11] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:22:11,245 - INFO - Starting the get_lineups process.
+2025-03-28 11:22:11,246 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:22:12,740 - INFO - Request successful. Response status: 200
+2025-03-28 11:22:12,742 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:22:12,744 - INFO - 127.0.0.1 - - [28/Mar/2025 11:22:12] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:29:40,211 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:29:40,213 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:29:41,966 - INFO - Request successful. Response status: 200
+2025-03-28 11:29:41,966 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:29:41,968 - INFO - 127.0.0.1 - - [28/Mar/2025 11:29:41] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:29:41,978 - INFO - Starting the get_lineups process.
+2025-03-28 11:29:41,979 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:29:43,543 - INFO - Request successful. Response status: 200
+2025-03-28 11:29:43,544 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:29:43,545 - INFO - 127.0.0.1 - - [28/Mar/2025 11:29:43] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:31:04,237 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:31:04,244 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:31:05,834 - INFO - Request successful. Response status: 200
+2025-03-28 11:31:05,835 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:31:05,837 - INFO - 127.0.0.1 - - [28/Mar/2025 11:31:05] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:31:05,885 - INFO - Starting the get_lineups process.
+2025-03-28 11:31:05,889 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:31:12,252 - INFO - Request successful. Response status: 200
+2025-03-28 11:31:12,252 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:31:12,254 - INFO - 127.0.0.1 - - [28/Mar/2025 11:31:12] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:31:24,931 - INFO - Starting the get_pools process.
+2025-03-28 11:31:24,933 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 11:31:26,414 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:31:26,415 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:31:26,716 - INFO - Request successful. Response status: 200
+2025-03-28 11:31:26,716 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 11:31:26,718 - INFO - 127.0.0.1 - - [28/Mar/2025 11:31:26] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 11:31:27,927 - INFO - Request successful. Response status: 200
+2025-03-28 11:31:27,928 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:31:27,929 - INFO - 127.0.0.1 - - [28/Mar/2025 11:31:27] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:31:27,936 - INFO - Starting the get_lineups process.
+2025-03-28 11:31:27,938 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:31:29,522 - INFO - Request successful. Response status: 200
+2025-03-28 11:31:29,523 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:31:29,524 - INFO - 127.0.0.1 - - [28/Mar/2025 11:31:29] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:40:03,154 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:40:03,156 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:40:04,843 - INFO - Request successful. Response status: 200
+2025-03-28 11:40:04,844 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:40:04,845 - INFO - 127.0.0.1 - - [28/Mar/2025 11:40:04] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:40:04,852 - INFO - Starting the get_lineups process.
+2025-03-28 11:40:04,853 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:40:06,500 - INFO - Request successful. Response status: 200
+2025-03-28 11:40:06,501 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:40:06,502 - INFO - 127.0.0.1 - - [28/Mar/2025 11:40:06] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:40:07,651 - INFO - Starting the get_pools process.
+2025-03-28 11:40:07,652 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 11:40:09,164 - INFO - Request successful. Response status: 200
+2025-03-28 11:40:09,164 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 11:40:09,165 - INFO - 127.0.0.1 - - [28/Mar/2025 11:40:09] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 11:40:10,164 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:40:10,166 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:40:11,722 - INFO - Request successful. Response status: 200
+2025-03-28 11:40:11,722 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:40:11,724 - INFO - 127.0.0.1 - - [28/Mar/2025 11:40:11] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:40:11,730 - INFO - Starting the get_lineups process.
+2025-03-28 11:40:11,731 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:40:13,284 - INFO - Request successful. Response status: 200
+2025-03-28 11:40:13,285 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:40:13,287 - INFO - 127.0.0.1 - - [28/Mar/2025 11:40:13] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:41:50,165 - INFO - 127.0.0.1 - - [28/Mar/2025 11:41:50] "POST /generate-token HTTP/1.1" 200 -
+2025-03-28 11:41:53,336 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:41:53,337 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:41:54,255 - INFO - 127.0.0.1 - - [28/Mar/2025 11:41:54] "GET /list-dashboards HTTP/1.1" 200 -
+2025-03-28 11:41:56,884 - INFO - Request successful. Response status: 200
+2025-03-28 11:41:56,884 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:41:56,886 - INFO - 127.0.0.1 - - [28/Mar/2025 11:41:56] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:41:56,895 - INFO - Starting the get_lineups process.
+2025-03-28 11:41:56,897 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:41:58,515 - INFO - Request successful. Response status: 200
+2025-03-28 11:41:58,516 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:41:58,517 - INFO - 127.0.0.1 - - [28/Mar/2025 11:41:58] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:42:09,330 - INFO - 127.0.0.1 - - [28/Mar/2025 11:42:09] "OPTIONS /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1" 200 -
+2025-03-28 11:42:09,337 - INFO - Starting the post_lineup_config process.
+2025-03-28 11:42:09,339 - ERROR - Missing required fields: name, sourceName, or idSrtGw.
+2025-03-28 11:42:09,341 - INFO - 127.0.0.1 - - [28/Mar/2025 11:42:09] "[31m[1mPOST /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1[0m" 400 -
+2025-03-28 11:42:41,183 - INFO - 127.0.0.1 - - [28/Mar/2025 11:42:41] "[31m[1mGET /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1[0m" 405 -
+2025-03-28 11:44:38,497 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:44:38,504 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:44:40,302 - INFO - Request successful. Response status: 200
+2025-03-28 11:44:40,303 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:44:40,304 - INFO - 127.0.0.1 - - [28/Mar/2025 11:44:40] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:44:40,314 - INFO - Starting the get_lineups process.
+2025-03-28 11:44:40,315 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:44:41,932 - INFO - Request successful. Response status: 200
+2025-03-28 11:44:41,933 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:44:41,934 - INFO - 127.0.0.1 - - [28/Mar/2025 11:44:41] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:44:46,783 - INFO - 127.0.0.1 - - [28/Mar/2025 11:44:46] "OPTIONS /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1" 200 -
+2025-03-28 11:44:46,786 - INFO - Starting the post_lineup_config process.
+2025-03-28 11:44:46,789 - ERROR - Missing required fields: name, sourceName, or idSrtGw.
+2025-03-28 11:44:46,790 - INFO - 127.0.0.1 - - [28/Mar/2025 11:44:46] "[31m[1mPOST /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1[0m" 400 -
+2025-03-28 11:46:07,921 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:46:07,923 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:46:09,455 - INFO - Request successful. Response status: 200
+2025-03-28 11:46:09,455 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:46:09,458 - INFO - 127.0.0.1 - - [28/Mar/2025 11:46:09] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:46:09,482 - INFO - Starting the get_lineups process.
+2025-03-28 11:46:09,486 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:46:11,075 - INFO - Request successful. Response status: 200
+2025-03-28 11:46:11,075 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:46:11,079 - INFO - 127.0.0.1 - - [28/Mar/2025 11:46:11] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:46:48,864 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:46:48,866 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:46:51,873 - INFO - Request successful. Response status: 200
+2025-03-28 11:46:51,874 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:46:51,875 - INFO - 127.0.0.1 - - [28/Mar/2025 11:46:51] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:46:51,882 - INFO - Starting the get_lineups process.
+2025-03-28 11:46:51,883 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:46:53,472 - INFO - Request successful. Response status: 200
+2025-03-28 11:46:53,473 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:46:53,474 - INFO - 127.0.0.1 - - [28/Mar/2025 11:46:53] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:47:01,404 - INFO - 127.0.0.1 - - [28/Mar/2025 11:47:01] "OPTIONS /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1" 200 -
+2025-03-28 11:47:01,412 - INFO - Starting the post_lineup_config process.
+2025-03-28 11:47:01,456 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/df584fe1-9b75-4520-a671-7e90158c6830/configs
+2025-03-28 11:47:03,256 - ERROR - Request failed. Status: 400. Reason: Bad Request
+2025-03-28 11:47:03,258 - INFO - 127.0.0.1 - - [28/Mar/2025 11:47:03] "POST /create-lineup-config/df584fe1-9b75-4520-a671-7e90158c6830 HTTP/1.1" 200 -
+2025-03-28 11:47:03,268 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:47:03,269 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:47:04,784 - INFO - Request successful. Response status: 200
+2025-03-28 11:47:04,784 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:47:04,786 - INFO - 127.0.0.1 - - [28/Mar/2025 11:47:04] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:47:04,795 - INFO - Starting the get_lineups process.
+2025-03-28 11:47:04,796 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:47:06,392 - INFO - Request successful. Response status: 200
+2025-03-28 11:47:06,393 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:47:06,394 - INFO - 127.0.0.1 - - [28/Mar/2025 11:47:06] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:56:21,231 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:56:21,233 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:56:22,864 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:22,865 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:56:22,867 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:22] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:56:22,878 - INFO - Starting the get_lineups process.
+2025-03-28 11:56:22,879 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:56:24,489 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:24,489 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:56:24,491 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:24] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:56:36,750 - INFO - Starting the get_pools process.
+2025-03-28 11:56:36,751 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 11:56:37,874 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:56:37,875 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:56:38,530 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:38,531 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 11:56:38,532 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:38] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 11:56:39,543 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:39,543 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:56:39,545 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:39] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:56:39,549 - INFO - Starting the get_lineups process.
+2025-03-28 11:56:39,550 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:56:41,157 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:41,157 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:56:41,158 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:41] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:56:54,203 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:54] "OPTIONS /create-lineup-config/2b7439ce-d39b-4231-b588-2d64e20c6b91 HTTP/1.1" 200 -
+2025-03-28 11:56:54,206 - INFO - Starting the post_lineup_config process.
+2025-03-28 11:56:54,208 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/2b7439ce-d39b-4231-b588-2d64e20c6b91/configs
+2025-03-28 11:56:55,820 - ERROR - Request failed. Status: 400. Reason: Bad Request
+2025-03-28 11:56:55,821 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:55] "POST /create-lineup-config/2b7439ce-d39b-4231-b588-2d64e20c6b91 HTTP/1.1" 200 -
+2025-03-28 11:56:55,825 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:56:55,826 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:56:57,327 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:57,328 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:56:57,329 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:57] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:56:57,334 - INFO - Starting the get_lineups process.
+2025-03-28 11:56:57,335 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:56:59,010 - INFO - Request successful. Response status: 200
+2025-03-28 11:56:59,011 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:56:59,012 - INFO - 127.0.0.1 - - [28/Mar/2025 11:56:59] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:58:03,626 - INFO - Starting the get_pools process.
+2025-03-28 11:58:03,629 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 11:58:05,165 - INFO - Request successful. Response status: 200
+2025-03-28 11:58:05,165 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 11:58:05,168 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:05] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 11:58:05,482 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:05] "GET /list-dashboards HTTP/1.1" 200 -
+2025-03-28 11:58:07,568 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:58:07,570 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:58:09,420 - INFO - Request successful. Response status: 200
+2025-03-28 11:58:09,420 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:58:09,423 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:09] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:58:09,472 - INFO - Starting the get_lineups process.
+2025-03-28 11:58:09,617 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:58:11,293 - INFO - Request successful. Response status: 200
+2025-03-28 11:58:11,294 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:58:11,298 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:11] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 11:58:22,272 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:22] "OPTIONS /create-lineup-config/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6 HTTP/1.1" 200 -
+2025-03-28 11:58:22,276 - INFO - Starting the post_lineup_config process.
+2025-03-28 11:58:22,278 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6/configs
+2025-03-28 11:58:23,866 - ERROR - Request failed. Status: 400. Reason: Bad Request
+2025-03-28 11:58:23,867 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:23] "POST /create-lineup-config/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6 HTTP/1.1" 200 -
+2025-03-28 11:58:23,875 - INFO - Starting the get_lineup_folders process.
+2025-03-28 11:58:23,876 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 11:58:25,512 - INFO - Request successful. Response status: 200
+2025-03-28 11:58:25,512 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 11:58:25,514 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:25] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 11:58:25,519 - INFO - Starting the get_lineups process.
+2025-03-28 11:58:25,520 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 11:58:27,016 - INFO - Request successful. Response status: 200
+2025-03-28 11:58:27,016 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 11:58:27,018 - INFO - 127.0.0.1 - - [28/Mar/2025 11:58:27] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:03:50,214 - INFO - Starting the post_lineup_config process.
+2025-03-28 12:03:50,219 - INFO - 127.0.0.1 - - [28/Mar/2025 12:03:50] "[31m[1mPOST /create-lineup-config/{{lineupId}} HTTP/1.1[0m" 400 -
+2025-03-28 12:04:24,499 - INFO - Starting the post_lineup_config process.
+2025-03-28 12:04:24,504 - INFO - 127.0.0.1 - - [28/Mar/2025 12:04:24] "[31m[1mPOST /create-lineup-config/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6 HTTP/1.1[0m" 400 -
+2025-03-28 12:04:54,332 - INFO - Starting the post_lineup_config process.
+2025-03-28 12:04:54,337 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6/configs
+2025-03-28 12:04:57,317 - INFO - Request successful. Status: 201
+2025-03-28 12:04:57,321 - INFO - 127.0.0.1 - - [28/Mar/2025 12:04:57] "POST /create-lineup-config/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6 HTTP/1.1" 200 -
+2025-03-28 12:08:25,125 - INFO - Starting the get_pools process.
+2025-03-28 12:08:25,126 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 12:08:26,641 - INFO - Request successful. Response status: 200
+2025-03-28 12:08:26,641 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 12:08:26,643 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:26] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 12:08:27,661 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:08:27,662 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:08:29,469 - INFO - Request successful. Response status: 200
+2025-03-28 12:08:29,469 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:08:29,471 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:29] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:08:29,478 - INFO - Starting the get_lineups process.
+2025-03-28 12:08:29,479 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:08:31,135 - INFO - Request successful. Response status: 200
+2025-03-28 12:08:31,136 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:08:31,138 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:31] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:08:38,709 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:38] "OPTIONS /create-lineup-config/2b7439ce-d39b-4231-b588-2d64e20c6b91 HTTP/1.1" 200 -
+2025-03-28 12:08:38,716 - INFO - Starting the post_lineup_config process.
+2025-03-28 12:08:38,718 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/2b7439ce-d39b-4231-b588-2d64e20c6b91/configs
+2025-03-28 12:08:40,443 - ERROR - Request failed. Status: 400. Reason: Bad Request
+2025-03-28 12:08:40,445 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:40] "POST /create-lineup-config/2b7439ce-d39b-4231-b588-2d64e20c6b91 HTTP/1.1" 200 -
+2025-03-28 12:08:40,451 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:08:40,452 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:08:42,064 - INFO - Request successful. Response status: 200
+2025-03-28 12:08:42,064 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:08:42,066 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:42] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:08:42,075 - INFO - Starting the get_lineups process.
+2025-03-28 12:08:42,076 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:08:43,717 - INFO - Request successful. Response status: 200
+2025-03-28 12:08:43,718 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:08:43,719 - INFO - 127.0.0.1 - - [28/Mar/2025 12:08:43] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:26:25,119 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:26:25,120 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:26:27,886 - INFO - Request successful. Response status: 200
+2025-03-28 12:26:27,887 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:26:27,888 - INFO - 127.0.0.1 - - [28/Mar/2025 12:26:27] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:26:27,895 - INFO - Starting the get_lineups process.
+2025-03-28 12:26:27,896 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:26:30,404 - INFO - Request successful. Response status: 200
+2025-03-28 12:26:30,404 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:26:30,406 - INFO - 127.0.0.1 - - [28/Mar/2025 12:26:30] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:26:42,444 - INFO - 127.0.0.1 - - [28/Mar/2025 12:26:42] "OPTIONS /create-lineup-config/2b7439ce-d39b-4231-b588-2d64e20c6b91 HTTP/1.1" 200 -
+2025-03-28 12:26:42,448 - INFO - Starting the post_lineup_config process.
+2025-03-28 12:26:42,449 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/2b7439ce-d39b-4231-b588-2d64e20c6b91/configs
+2025-03-28 12:26:45,047 - INFO - Request successful. Status: 201
+2025-03-28 12:26:45,048 - INFO - 127.0.0.1 - - [28/Mar/2025 12:26:45] "POST /create-lineup-config/2b7439ce-d39b-4231-b588-2d64e20c6b91 HTTP/1.1" 200 -
+2025-03-28 12:26:45,054 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:26:45,054 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:26:47,061 - INFO - Request successful. Response status: 200
+2025-03-28 12:26:47,061 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:26:47,063 - INFO - 127.0.0.1 - - [28/Mar/2025 12:26:47] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:26:47,068 - INFO - Starting the get_lineups process.
+2025-03-28 12:26:47,069 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:26:50,474 - INFO - Request successful. Response status: 200
+2025-03-28 12:26:50,474 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "config4",
+                "configurationId": "c54df84c-8651-435e-9956-f69a89fdc997",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created at 2025-03-28 12:26:42"
+            },
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:26:50,475 - INFO - 127.0.0.1 - - [28/Mar/2025 12:26:50] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:28:33,358 - INFO - Starting the get_pools process.
+2025-03-28 12:28:33,359 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 12:28:34,588 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:28:34,589 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:28:35,480 - INFO - Request successful. Response status: 200
+2025-03-28 12:28:35,480 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 12:28:35,482 - INFO - 127.0.0.1 - - [28/Mar/2025 12:28:35] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 12:28:37,698 - INFO - Request successful. Response status: 200
+2025-03-28 12:28:37,698 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:28:37,699 - INFO - 127.0.0.1 - - [28/Mar/2025 12:28:37] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:28:37,705 - INFO - Starting the get_lineups process.
+2025-03-28 12:28:37,707 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:28:41,764 - INFO - Request successful. Response status: 200
+2025-03-28 12:28:41,764 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:28:41,766 - INFO - 127.0.0.1 - - [28/Mar/2025 12:28:41] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:28:50,436 - INFO - 127.0.0.1 - - [28/Mar/2025 12:28:50] "OPTIONS /create-lineup-config/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6 HTTP/1.1" 200 -
+2025-03-28 12:28:50,439 - INFO - Starting the post_lineup_config process.
+2025-03-28 12:28:50,442 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6/configs
+2025-03-28 12:28:56,208 - INFO - Request successful. Status: 201
+2025-03-28 12:28:56,209 - INFO - 127.0.0.1 - - [28/Mar/2025 12:28:56] "POST /create-lineup-config/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6 HTTP/1.1" 200 -
+2025-03-28 12:28:56,214 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:28:56,214 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:28:59,062 - INFO - Request successful. Response status: 200
+2025-03-28 12:28:59,062 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:28:59,063 - INFO - 127.0.0.1 - - [28/Mar/2025 12:28:59] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:28:59,071 - INFO - Starting the get_lineups process.
+2025-03-28 12:28:59,072 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:29:00,490 - INFO - Request successful. Response status: 200
+2025-03-28 12:29:00,490 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            },
+            {
+                "configuration": "config4",
+                "configurationId": "6b379271-008e-4e4e-81d9-f31f7c13eca5",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created at 2025-03-28 12:28:50"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:29:00,492 - INFO - 127.0.0.1 - - [28/Mar/2025 12:29:00] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:35:03,342 - INFO - Starting the get_pools process.
+2025-03-28 12:35:03,376 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-03-28 12:35:04,552 - INFO - Starting the get_lineup_folders process.
+2025-03-28 12:35:04,552 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-03-28 12:35:06,904 - INFO - Request successful. Response status: 200
+2025-03-28 12:35:06,904 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-03-28 12:35:06,906 - INFO - 127.0.0.1 - - [28/Mar/2025 12:35:06] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-03-28 12:35:06,911 - INFO - Starting the get_lineups process.
+2025-03-28 12:35:06,913 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-03-28 12:35:07,719 - INFO - Request successful. Response status: 200
+2025-03-28 12:35:07,719 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-03-28 12:35:07,721 - INFO - 127.0.0.1 - - [28/Mar/2025 12:35:07] "GET /list-pools HTTP/1.1" 200 -
+2025-03-28 12:35:08,670 - INFO - Request successful. Response status: 200
+2025-03-28 12:35:08,671 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingest Config2",
+                "configurationId": "6ca6b8d1-04b4-4037-a2c2-f78ee81733b9",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created by Postman"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-03-28 12:35:08,672 - INFO - 127.0.0.1 - - [28/Mar/2025 12:35:08] "GET /list-lineups HTTP/1.1" 200 -
+2025-03-28 12:43:49,807 - INFO -  * Detected change in 'C:\\Users\\nkalyani\\PycharmProjects\\FlaskBackend\\app.py', reloading

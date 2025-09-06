@@ -1,0 +1,26 @@
+2025-05-20 12:49:45,187 - INFO - Finished the delete lineup config process.
+2025-05-20 12:49:45,190 - INFO - Finished the delete lineup folders process.
+2025-05-20 12:49:45,191 - INFO - Finished the delete pool process.
+2025-05-20 12:49:45,193 - INFO - Finished the delete lineup process.
+2025-05-20 12:49:45,204 - INFO - Finished the get lineup configs process.
+2025-05-20 12:49:45,208 - INFO - Finished the get lineup configs process.
+2025-05-20 12:49:45,210 - INFO - Finished the get_lineup_folders process.
+2025-05-20 12:49:45,212 - INFO - Finished the get_lineups process.
+2025-05-20 12:49:45,214 - INFO - Finished the get_logs process.
+2025-05-20 12:49:45,216 - INFO - Finished the pools process.
+2025-05-20 12:49:45,217 - INFO - Finished the get_resources process.
+2025-05-20 12:49:45,219 - INFO - Finished the get_sources process.
+2025-05-20 12:49:45,221 - INFO - Finished the post_lineup_config process.
+2025-05-20 12:49:45,223 - INFO - Finished the post_lineup_folders process.
+2025-05-20 12:49:45,225 - INFO - Finished the post_lineups process.
+2025-05-20 12:49:45,227 - INFO - Finished the post_pools process.
+2025-05-20 12:49:45,229 - INFO - Finished the put_lineups process.
+2025-05-20 12:49:45,231 - INFO - Finished the put_lineup_config process.
+2025-05-20 12:49:45,233 - INFO - Finished the put_lineup_folders process.
+2025-05-20 12:49:45,235 - INFO - Finished the put_pools process.
+2025-05-20 12:49:45,323 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-20 12:49:45,323 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 12:49:45,326 - INFO -  * Restarting with stat
+2025-05-20 14:12:07,563 - INFO -  * Restarting with stat
+2025-05-20 14:37:13,406 - INFO -  * Restarting with stat

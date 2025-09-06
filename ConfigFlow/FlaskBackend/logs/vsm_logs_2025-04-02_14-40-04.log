@@ -1,0 +1,23 @@
+2025-04-02 14:40:04,203 - INFO - Finished the delete lineup config process.
+2025-04-02 14:40:04,204 - INFO - Finished the delete lineup folders process.
+2025-04-02 14:40:04,205 - INFO - Finished the delete pool process.
+2025-04-02 14:40:04,206 - INFO - Finished the delete lineup process.
+2025-04-02 14:40:04,212 - INFO - Finished the get lineup configs process.
+2025-04-02 14:40:04,213 - INFO - Finished the get lineup configs process.
+2025-04-02 14:40:04,214 - INFO - Finished the get_lineup_folders process.
+2025-04-02 14:40:04,215 - INFO - Finished the get_lineups process.
+2025-04-02 14:40:04,215 - INFO - Finished the get_logs process.
+2025-04-02 14:40:04,216 - INFO - Finished the pools process.
+2025-04-02 14:40:04,217 - INFO - Finished the get_resources process.
+2025-04-02 14:40:04,217 - INFO - Finished the get_sources process.
+2025-04-02 14:40:04,218 - INFO - Finished the post_lineup_config process.
+2025-04-02 14:40:04,219 - INFO - Finished the post_lineup_folders process.
+2025-04-02 14:40:04,220 - INFO - Finished the post_lineups process.
+2025-04-02 14:40:04,220 - INFO - Finished the post_pools process.
+2025-04-02 14:40:04,221 - INFO - Finished the put_lineups process.
+2025-04-02 14:40:04,224 - INFO - Finished the put_lineup_config process.
+2025-04-02 14:40:04,225 - INFO - Finished the put_lineup_folders process.
+2025-04-02 14:40:04,226 - INFO - Finished the put_pools process.
+2025-04-02 14:40:04,248 - WARNING -  * Debugger is active!
+2025-04-02 14:40:04,249 - INFO -  * Debugger PIN: 627-281-010
+2025-04-02 14:44:04,850 - INFO -  * Detected change in 'C:\\Users\\nkalyani\\PycharmProjects\\FlaskBackend\\scripts\\put_lineup_config.py', reloading

@@ -1,0 +1,27 @@
+2025-03-27 12:53:51,406 - INFO - Finished the delete lineup folders process.
+2025-03-27 12:53:51,407 - INFO - Finished the delete pool process.
+2025-03-27 12:53:51,409 - INFO - Finished the delete lineup process.
+2025-03-27 12:53:51,411 - INFO - Finished the get lineup configs process.
+2025-03-27 12:53:51,418 - INFO - Finished the get_lineup_folders process.
+2025-03-27 12:53:51,419 - INFO - Finished the get_lineups process.
+2025-03-27 12:53:51,420 - INFO - Finished the get_logs process.
+2025-03-27 12:53:51,420 - INFO - Finished the pools process.
+2025-03-27 12:53:51,423 - INFO - Finished the post_lineup_config process.
+2025-03-27 12:53:51,425 - INFO - Finished the post_lineup_folders process.
+2025-03-27 12:53:51,426 - INFO - Finished the post_lineups process.
+2025-03-27 12:53:51,427 - INFO - Finished the post_pools process.
+2025-03-27 12:53:51,428 - INFO - Finished the put_lineups process.
+2025-03-27 12:53:51,429 - INFO - Finished the put_lineup_folders process.
+2025-03-27 12:53:51,430 - INFO - Finished the put_pools process.
+2025-03-27 12:53:51,463 - WARNING -  * Debugger is active!
+2025-03-27 12:53:51,465 - INFO -  * Debugger PIN: 627-281-010
+2025-03-27 12:55:28,459 - INFO - 127.0.0.1 - - [27/Mar/2025 12:55:28] "[31m[1mGET /create-lineup-config HTTP/1.1[0m" 405 -
+2025-03-27 12:55:34,500 - INFO - Starting the post_lineup_config process.
+2025-03-27 12:55:34,502 - INFO - 127.0.0.1 - - [27/Mar/2025 12:55:34] "[31m[1mPOST /create-lineup-config HTTP/1.1[0m" 415 -
+2025-03-27 12:55:36,775 - INFO - 127.0.0.1 - - [27/Mar/2025 12:55:36] "GET /list-dashboards HTTP/1.1" 200 -
+2025-03-27 12:55:36,910 - INFO - 127.0.0.1 - - [27/Mar/2025 12:55:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-27 12:59:03,808 - INFO - Starting the post_lineup_config process.
+2025-03-27 12:59:03,809 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/lineups/6f64bc65-b61e-45e3-9638-3cec2f0ee3c6/configs
+2025-03-27 12:59:05,433 - ERROR - Request failed. Status: 400. Reason: Bad Request
+2025-03-27 12:59:05,434 - INFO - 127.0.0.1 - - [27/Mar/2025 12:59:05] "POST /create-lineup-config HTTP/1.1" 200 -
+2025-03-27 13:01:38,306 - INFO -  * Detected change in 'C:\\Users\\nkalyani\\PycharmProjects\\FlaskBackend\\scripts\\post_lineup_config.py', reloading

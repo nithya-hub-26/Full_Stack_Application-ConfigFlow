@@ -1,0 +1,828 @@
+2025-04-01 15:49:20,262 - INFO - Finished the delete lineup config process.
+2025-04-01 15:49:20,263 - INFO - Finished the delete lineup folders process.
+2025-04-01 15:49:20,263 - INFO - Finished the delete pool process.
+2025-04-01 15:49:20,264 - INFO - Finished the delete lineup process.
+2025-04-01 15:49:20,266 - INFO - Finished the get lineup configs process.
+2025-04-01 15:49:20,267 - INFO - Finished the get_lineup_folders process.
+2025-04-01 15:49:20,267 - INFO - Finished the get_lineups process.
+2025-04-01 15:49:20,268 - INFO - Finished the get_logs process.
+2025-04-01 15:49:20,269 - INFO - Finished the pools process.
+2025-04-01 15:49:20,270 - INFO - Finished the get_resources process.
+2025-04-01 15:49:20,271 - INFO - Finished the get_sources process.
+2025-04-01 15:49:20,271 - INFO - Finished the post_lineup_config process.
+2025-04-01 15:49:20,272 - INFO - Finished the post_lineup_folders process.
+2025-04-01 15:49:20,273 - INFO - Finished the post_lineups process.
+2025-04-01 15:49:20,274 - INFO - Finished the post_pools process.
+2025-04-01 15:49:20,274 - INFO - Finished the put_lineups process.
+2025-04-01 15:49:20,275 - INFO - Finished the put_lineup_config process.
+2025-04-01 15:49:20,276 - INFO - Finished the put_lineup_folders process.
+2025-04-01 15:49:20,277 - INFO - Finished the put_pools process.
+2025-04-01 15:49:20,306 - WARNING -  * Debugger is active!
+2025-04-01 15:49:20,308 - INFO -  * Debugger PIN: 627-281-010
+2025-04-01 15:49:56,521 - INFO - Starting the get_lineups process.
+2025-04-01 15:49:56,521 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-04-01 15:49:57,995 - INFO - Request successful. Response status: 200
+2025-04-01 15:49:57,996 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingress Config",
+                "configurationId": "d857c496-04f8-4249-8e13-99e2faa4f014",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created at 2025-04-01 15:16:49"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-04-01 15:49:57,998 - INFO - 127.0.0.1 - - [01/Apr/2025 15:49:57] "GET /list-lineups HTTP/1.1" 200 -
+2025-04-01 15:53:57,524 - INFO - 127.0.0.1 - - [01/Apr/2025 15:53:57] "POST /generate-token HTTP/1.1" 200 -
+2025-04-01 15:53:59,939 - INFO - 127.0.0.1 - - [01/Apr/2025 15:53:59] "GET /list-dashboards HTTP/1.1" 200 -
+2025-04-01 15:56:15,723 - INFO - Starting the get_pools process.
+2025-04-01 15:56:15,723 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/pools
+2025-04-01 15:56:17,196 - INFO - Request successful. Response status: 200
+2025-04-01 15:56:17,196 - INFO - Response JSON: 
+[
+    {
+        "id": "435550d4-6daa-42c7-b8c2-ebb7a772b015",
+        "name": "vDCM-Ex Pool",
+        "resourceType": "DCM",
+        "swVersion": {
+            "majorVersion": 23,
+            "minorVersion": 3,
+            "buildVersion": 1
+        },
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    },
+    {
+        "id": "7ba28bab-9cdd-4d60-8fe1-1719b6e9750f",
+        "name": "SampleDCMpool",
+        "resourceType": "DCM",
+        "protectionSettings": {
+            "protectionScheme": "NONE",
+            "resResStreamingScheme": "NOT_APPLICABLE",
+            "failOverOnDeviceNotResponding": false,
+            "failOverOnDeviceOperationalFailure": false,
+            "failOverOnIpRouterConnectedPortsDown": false,
+            "failOverOnInputTSLossOnNextStage": false,
+            "channelFailOverOnSDIStreamLoss": false,
+            "channelFailOverOnVideoInputFreeze": false,
+            "automaticallyRecoverHealthyDevices": false,
+            "ipRouterFailureDetectionDelay": 5,
+            "manualSwitchOverDelay": 15,
+            "minimumAutoSwitchOverDelay": 4000,
+            "ipRouterPortControl": "NONE"
+        },
+        "xcodeCapacityStrategy": "NON_EXCLUSIVE",
+        "allocationHints": {
+            "deviceAllocationOrder": "LOAD_BALANCED",
+            "outputPort": "FIRST_BOARD_FIRST_PORT"
+        }
+    }
+]
+2025-04-01 15:56:17,198 - INFO - 127.0.0.1 - - [01/Apr/2025 15:56:17] "GET /list-pools HTTP/1.1" 200 -
+2025-04-01 15:56:21,265 - INFO - Starting the get_lineup_folders process.
+2025-04-01 15:56:21,267 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups/folders
+2025-04-01 15:56:22,805 - INFO - Request successful. Response status: 200
+2025-04-01 15:56:22,806 - INFO - Response JSON: 
+[
+    {
+        "id": "584d838d-a397-4323-a70a-62d40ad782d9",
+        "name": "Main2"
+    },
+    {
+        "id": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "name": "Bloomberg"
+    },
+    {
+        "id": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "name": "Main"
+    },
+    {
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "id": "feb489ab-bdd4-4e0a-a2f5-15d0e3b57e8f",
+        "name": "Try_del"
+    }
+]
+2025-04-01 15:56:22,808 - INFO - 127.0.0.1 - - [01/Apr/2025 15:56:22] "GET /list-lineup-folders HTTP/1.1" 200 -
+2025-04-01 15:56:22,815 - INFO - Starting the get_lineups process.
+2025-04-01 15:56:22,816 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
+2025-04-01 15:56:24,309 - INFO - Request successful. Response status: 200
+2025-04-01 15:56:24,310 - INFO - Response JSON: 
+[
+    {
+        "lineup": "DCON",
+        "lineupId": "352bd50c-7231-45c7-a81e-b06cd9177c81",
+        "lineupType": "VDCM_ABR",
+        "configurations": [
+            {
+                "configuration": "DCON",
+                "configurationId": "5a4c2549-452c-42fd-a6c0-cd2453b157ec",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    },
+    {
+        "lineup": "Video_lineup",
+        "lineupId": "13bcd157-11e4-439e-972b-8d56a0a28f89",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Live_lineup",
+        "lineupId": "df584fe1-9b75-4520-a671-7e90158c6830",
+        "parentFolderId": "22bb7545-55b6-4c7b-bac9-bc20e9673973",
+        "lineupType": "VDCM_ABR",
+        "configurations": []
+    },
+    {
+        "lineup": "Ingress Lineup",
+        "lineupId": "6f64bc65-b61e-45e3-9638-3cec2f0ee3c6",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Ingress Config",
+                "configurationId": "d857c496-04f8-4249-8e13-99e2faa4f014",
+                "configState": "INACTIVE",
+                "configValidity": "VALID",
+                "configDescription": "Created at 2025-04-01 15:16:49"
+            }
+        ]
+    },
+    {
+        "lineup": "Egress Lineup",
+        "lineupId": "2b7439ce-d39b-4231-b588-2d64e20c6b91",
+        "parentFolderId": "7f8f1ef6-3503-4923-89c7-be65e81c6aaf",
+        "lineupType": "SINGLE_STAGE_REST",
+        "configurations": [
+            {
+                "configuration": "Egress Config2",
+                "configurationId": "c715871d-4cfc-4b27-8aeb-3a7af0bd1c61",
+                "configState": "INACTIVE",
+                "configValidity": "VALID"
+            }
+        ]
+    }
+]
+2025-04-01 15:56:24,311 - INFO - 127.0.0.1 - - [01/Apr/2025 15:56:24] "GET /list-lineups HTTP/1.1" 200 -
+2025-04-01 15:56:24,319 - INFO - Starting the get_resources process.
+2025-04-01 15:56:24,321 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/resources
+2025-04-01 15:56:26,055 - INFO - Request successful. Response status: 200
+2025-04-01 15:56:26,056 - INFO - Response JSON: 
+[
+    {
+        "name": "vDCM_Ex",
+        "type": "DCM",
+        "swVersion": "23.3.1",
+        "restApiHost": "10.169.17.86",
+        "id": "8a299691-93b6-fcb3-0194-2aace4a76041",
+        "uiURL": "http://10.169.17.86:80",
+        "subType": "SOFTWARE",
+        "properties": [
+            {
+                "property": "URCSmxUDPPort",
+                "value": "Not Applicable"
+            },
+            {
+                "property": "ScsProxyMonitoringEnabled",
+                "value": "true"
+            },
+            {
+                "property": "UIPort",
+                "value": "80"
+            },
+            {
+                "property": "HTTPSPort",
+                "value": "8443"
+            },
+            {
+                "property": "AutoReApplyConfiguration",
+                "value": "false"
+            },
+            {
+                "property": "UIProtocol",
+                "value": "http"
+            },
+            {
+                "property": "SetUdpBoundary",
+                "value": "0"
+            },
+            {
+                "property": "SetUrcSmxUdpPort",
+                "value": "0"
+            },
+            {
+                "property": "HostID",
+                "value": "0000FLM2051RMN3"
+            },
+            {
+                "property": "MessageMonitoringEnabled",
+                "value": "true"
+            },
+            {
+                "property": "ConfigureURC2",
+                "value": "NotManaged"
+            },
+            {
+                "property": "REST_Communication",
+                "value": "true"
+            },
+            {
+                "property": "EISProxyPortNumber",
+                "value": "9000"
+            },
+            {
+                "property": "VMFP_ABR_Present",
+                "value": "true"
+            },
+            {
+                "property": "URCSmxIPAddress",
+                "value": "Not Applicable"
+            },
+            {
+                "property": "PathSimFile",
+                "value": ""
+            },
+            {
+                "property": "IGMP_Mode",
+                "value": "Manual"
+            },
+            {
+                "property": "HTTPTimeout",
+                "value": "500"
+            },
+            {
+                "property": "IIOPAccountName",
+                "value": "admin"
+            },
+            {
+                "property": "URCSmxCommunityName",
+                "value": "Not Applicable"
+            },
+            {
+                "property": "SubType",
+                "value": "4"
+            },
+            {
+                "property": "SimulationMode",
+                "value": "Off"
+            },
+            {
+                "property": "CollectMetrics",
+                "value": "NotManaged"
+            },
+            {
+                "property": "IIOP_Communication",
+                "value": "false"
+            },
+            {
+                "property": "RestAPIProtocol",
+                "value": "https"
+            },
+            {
+                "property": "RestAPIHost",
+                "value": "10.169.17.86"
+            },
+            {
+                "property": "SetSystemName",
+                "value": "Disabled"
+            },
+            {
+                "property": "UIHost",
+                "value": "10.169.17.86"
+            },
+            {
+                "property": "EISProxyHost",
+                "value": "10.169.17.86"
+            },
+            {
+                "property": "IpStreamCreationMode",
+                "value": "IP_UDP"
+            },
+            {
+                "property": "PSIGProxyHost",
+                "value": "10.169.17.86"
+            },
+            {
+                "property": "PollRetryCount",
+                "value": "2"
+            },
+            {
+                "property": "CandidateForCleanup",
+                "value": "false"
+            },
+            {
+                "property": "HTTPRetryCount",
+                "value": "1"
+            },
+            {
+                "property": "UdpBoundary",
+                "value": "0"
+            },
+            {
+                "property": "PSIGProxyPortNumber",
+                "value": "8502"
+            }
+        ]
+    },
+    {
+        "name": "vDCM2",
+        "type": "DCM",
+        "restApiHost": "10.169.17.23",
+        "id": "8a299691-93b6-fcb3-0194-72eb08f375dd",
+        "uiURL": "http://10.169.17.23:80",
+        "subType": "NOT_APPLICABLE",
+        "properties": [
+            {
+                "property": "URCSmxUDPPort",
+                "value": ""
+            },
+            {
+                "property": "ScsProxyMonitoringEnabled",
+                "value": "false"
+            },
+            {
+                "property": "UIPort",
+                "value": "80"
+            },
+            {
+                "property": "HTTPSPort",
+                "value": "8443"
+            },
+            {
+                "property": "AutoReApplyConfiguration",
+                "value": "false"
+            },
+            {
+                "property": "UIProtocol",
+                "value": "http"
+            },
+            {
+                "property": "SetUdpBoundary",
+                "value": "0"
+            },
+            {
+                "property": "SetUrcSmxUdpPort",
+                "value": "0"
+            },
+            {
+                "property": "HostID",
+                "value": ""
+            },
+            {
+                "property": "MessageMonitoringEnabled",
+                "value": "true"
+            },
+            {
+                "property": "ConfigureURC2",
+                "value": "NotManaged"
+            },
+            {
+                "property": "REST_Communication",
+                "value": "true"
+            },
+            {
+                "property": "EISProxyPortNumber",
+                "value": "9000"
+            },
+            {
+                "property": "VMFP_ABR_Present",
+                "value": "false"
+            },
+            {
+                "property": "URCSmxIPAddress",
+                "value": ""
+            },
+            {
+                "property": "PathSimFile",
+                "value": ""
+            },
+            {
+                "property": "IGMP_Mode",
+                "value": "Unknown"
+            },
+            {
+                "property": "HTTPTimeout",
+                "value": "500"
+            },
+            {
+                "property": "IIOPAccountName",
+                "value": "guest"
+            },
+            {
+                "property": "URCSmxCommunityName",
+                "value": ""
+            },
+            {
+                "property": "SubType",
+                "value": "-1"
+            },
+            {
+                "property": "SimulationMode",
+                "value": "Off"
+            },
+            {
+                "property": "CollectMetrics",
+                "value": "NotManaged"
+            },
+            {
+                "property": "IIOP_Communication",
+                "value": "false"
+            },
+            {
+                "property": "RestAPIProtocol",
+                "value": "https"
+            },
+            {
+                "property": "RestAPIHost",
+                "value": "10.169.17.23"
+            },
+            {
+                "property": "SetSystemName",
+                "value": "Disabled"
+            },
+            {
+                "property": "UIHost",
+                "value": "10.169.17.23"
+            },
+            {
+                "property": "EISProxyHost",
+                "value": "10.169.17.23"
+            },
+            {
+                "property": "IpStreamCreationMode",
+                "value": "IP_UDP"
+            },
+            {
+                "property": "PSIGProxyHost",
+                "value": "10.169.17.23"
+            },
+            {
+                "property": "PollRetryCount",
+                "value": "2"
+            },
+            {
+                "property": "CandidateForCleanup",
+                "value": "false"
+            },
+            {
+                "property": "HTTPRetryCount",
+                "value": "1"
+            },
+            {
+                "property": "UdpBoundary",
+                "value": ""
+            },
+            {
+                "property": "PSIGProxyPortNumber",
+                "value": "8502"
+            }
+        ]
+    },
+    {
+        "name": "vDCM3",
+        "type": "DCM",
+        "iiopHost": "string",
+        "restApiHost": "10.169.17.25",
+        "id": "8a299691-951d-e4fb-0195-223dd0e8626a",
+        "uiURL": "http://string:80",
+        "subType": "NOT_APPLICABLE",
+        "properties": [
+            {
+                "property": "URCSmxUDPPort",
+                "value": ""
+            },
+            {
+                "property": "ScsProxyMonitoringEnabled",
+                "value": "false"
+            },
+            {
+                "property": "UIPort",
+                "value": "80"
+            },
+            {
+                "property": "HTTPSPort",
+                "value": "8443"
+            },
+            {
+                "property": "AutoReApplyConfiguration",
+                "value": "false"
+            },
+            {
+                "property": "UIProtocol",
+                "value": "http"
+            },
+            {
+                "property": "SetUdpBoundary",
+                "value": "0"
+            },
+            {
+                "property": "SetUrcSmxUdpPort",
+                "value": "0"
+            },
+            {
+                "property": "HostID",
+                "value": ""
+            },
+            {
+                "property": "MaxVSEperPool",
+                "value": "0"
+            },
+            {
+                "property": "MessageMonitoringEnabled",
+                "value": "true"
+            },
+            {
+                "property": "ConfigureURC2",
+                "value": "NotManaged"
+            },
+            {
+                "property": "REST_Communication",
+                "value": "true"
+            },
+            {
+                "property": "EISProxyPortNumber",
+                "value": "9000"
+            },
+            {
+                "property": "VMFP_ABR_Present",
+                "value": "false"
+            },
+            {
+                "property": "URCSmxIPAddress",
+                "value": ""
+            },
+            {
+                "property": "PollPort",
+                "value": "80"
+            },
+            {
+                "property": "PathSimFile",
+                "value": " "
+            },
+            {
+                "property": "IIOPPort",
+                "value": "5003"
+            },
+            {
+                "property": "IGMP_Mode",
+                "value": "Unknown"
+            },
+            {
+                "property": "HTTPTimeout",
+                "value": "500"
+            },
+            {
+                "property": "MaxNumberOfPools",
+                "value": "0"
+            },
+            {
+                "property": "IIOPAccountName",
+                "value": "guest"
+            },
+            {
+                "property": "URCSmxCommunityName",
+                "value": ""
+            },
+            {
+                "property": "SubType",
+                "value": "-1"
+            },
+            {
+                "property": "SimulationMode",
+                "value": "Off"
+            },
+            {
+                "property": "CollectMetrics",
+                "value": "NotManaged"
+            },
+            {
+                "property": "MaxNumberOfVSEs",
+                "value": "0"
+            },
+            {
+                "property": "IIOP_Communication",
+                "value": "true"
+            },
+            {
+                "property": "RestAPIProtocol",
+                "value": "https"
+            },
+            {
+                "property": "RestAPIHost",
+                "value": "10.169.17.25"
+            },
+            {
+                "property": "SetSystemName",
+                "value": "Disabled"
+            },
+            {
+                "property": "UIHost",
+                "value": "string"
+            },
+            {
+                "property": "EISProxyHost",
+                "value": "string"
+            },
+            {
+                "property": "IpStreamCreationMode",
+                "value": "IP_UDP"
+            },
+            {
+                "property": "PollTimeOut",
+                "value": "500"
+            },
+            {
+                "property": "PSIGProxyHost",
+                "value": "string"
+            },
+            {
+                "property": "PollRetryCount",
+                "value": "2"
+            },
+            {
+                "property": "CandidateForCleanup",
+                "value": "false"
+            },
+            {
+                "property": "HTTPRetryCount",
+                "value": "1"
+            },
+            {
+                "property": "IIOPHost",
+                "value": "string"
+            },
+            {
+                "property": "UdpBoundary",
+                "value": ""
+            },
+            {
+                "property": "PSIGProxyPortNumber",
+                "value": "8502"
+            }
+        ]
+    }
+]
+2025-04-01 15:56:26,058 - INFO - 127.0.0.1 - - [01/Apr/2025 15:56:26] "GET /list-resources HTTP/1.1" 200 -
+2025-04-01 15:56:26,065 - INFO - Starting the get_sources process.
+2025-04-01 15:56:26,066 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/sources
+2025-04-01 15:56:29,338 - INFO - Request successful. Response status: 200
+2025-04-01 15:56:29,339 - INFO - Response JSON: 
+[
+    {
+        "sourceType": "SRT",
+        "id": "b939f67b-a0a5-4a8c-8068-c7ad32de0da6",
+        "name": "Video HD",
+        "sid": 1,
+        "tsType": "SERVICE",
+        "tsStandard": "DVB",
+        "channelId": "",
+        "components": [
+            {
+                "componentType": "video",
+                "pid": 2136,
+                "streamType": 27,
+                "frameRate": "23.98",
+                "scanType": "INTERLACED",
+                "includeInServiceProtectionPidList": false
+            },
+            {
+                "componentType": "audio",
+                "pid": 3156,
+                "streamType": 4,
+                "language": "ben",
+                "sampleRate": "48",
+                "includeInServiceProtectionPidList": false
+            },
+            {
+                "componentType": "data",
+                "pid": 2945,
+                "streamType": 6,
+                "descriptorTag": 89,
+                "language": "ara",
+                "includeInServiceProtectionPidList": false
+            }
+        ],
+        "bandwidthLimit": {
+            "mode": "Disabled"
+        },
+        "mode": "Listener",
+        "receiveMode": "On",
+        "ipSourceParams": {
+            "receptionPort": 5000
+        },
+        "latency": 200,
+        "timeBaseSelection": {
+            "mode": "AutoRefPCR"
+        },
+        "securityParams": {
+            "keyLength": "Disabled"
+        },
+        "defaultItfOrdinal": 0
+    },
+    {
+        "sourceType": "SRT",
+        "id": "242fc2e4-5c25-4fe6-8835-dba4ed131b04",
+        "name": "EuropeHD",
+        "sid": 1,
+        "tsType": "SERVICE",
+        "tsStandard": "DVB",
+        "channelId": "",
+        "components": [
+            {
+                "componentType": "video",
+                "pid": 2934,
+                "streamType": 27,
+                "frameRate": "24",
+                "scanType": "INTERLACED",
+                "includeInServiceProtectionPidList": false
+            }
+        ],
+        "bandwidthLimit": {
+            "mode": "Disabled"
+        },
+        "mode": "Listener",
+        "receiveMode": "On",
+        "ipSourceParams": {
+            "receptionPort": 5000
+        },
+        "latency": 200,
+        "timeBaseSelection": {
+            "mode": "AutoRefPCR"
+        },
+        "securityParams": {
+            "keyLength": "Disabled"
+        },
+        "defaultItfOrdinal": 0
+    }
+]
+2025-04-01 15:56:29,340 - INFO - 127.0.0.1 - - [01/Apr/2025 15:56:29] "GET /list-sources HTTP/1.1" 200 -
+2025-04-01 18:41:07,063 - INFO -  * Detected change in 'C:\\Users\\nkalyani\\PycharmProjects\\FlaskBackend\\app.py', reloading

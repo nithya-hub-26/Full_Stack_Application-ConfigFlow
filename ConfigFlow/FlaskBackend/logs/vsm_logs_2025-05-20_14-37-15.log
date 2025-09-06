@@ -1,0 +1,22 @@
+2025-05-20 14:37:15,367 - INFO - Finished the delete lineup config process.
+2025-05-20 14:37:15,369 - INFO - Finished the delete lineup folders process.
+2025-05-20 14:37:15,371 - INFO - Finished the delete pool process.
+2025-05-20 14:37:15,373 - INFO - Finished the delete lineup process.
+2025-05-20 14:37:15,378 - INFO - Finished the get lineup configs process.
+2025-05-20 14:37:15,383 - INFO - Finished the get lineup configs process.
+2025-05-20 14:37:15,385 - INFO - Finished the get_lineup_folders process.
+2025-05-20 14:37:15,387 - INFO - Finished the get_lineups process.
+2025-05-20 14:37:15,389 - INFO - Finished the get_logs process.
+2025-05-20 14:37:15,391 - INFO - Finished the pools process.
+2025-05-20 14:37:15,398 - INFO - Finished the get_resources process.
+2025-05-20 14:37:15,402 - INFO - Finished the get_sources process.
+2025-05-20 14:37:15,405 - INFO - Finished the post_lineup_config process.
+2025-05-20 14:37:15,407 - INFO - Finished the post_lineup_folders process.
+2025-05-20 14:37:15,409 - INFO - Finished the post_lineups process.
+2025-05-20 14:37:15,410 - INFO - Finished the post_pools process.
+2025-05-20 14:37:15,412 - INFO - Finished the put_lineups process.
+2025-05-20 14:37:15,414 - INFO - Finished the put_lineup_config process.
+2025-05-20 14:37:15,416 - INFO - Finished the put_lineup_folders process.
+2025-05-20 14:37:15,417 - INFO - Finished the put_pools process.
+2025-05-20 14:37:15,500 - WARNING -  * Debugger is active!
+2025-05-20 14:37:15,506 - INFO -  * Debugger PIN: 627-281-010

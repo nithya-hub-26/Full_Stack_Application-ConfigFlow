@@ -1,0 +1,18 @@
+2025-04-01 15:15:14,819 - INFO - Finished the delete lineup folders process.
+2025-04-01 15:15:14,820 - INFO - Finished the delete pool process.
+2025-04-01 15:15:14,821 - INFO - Finished the delete lineup process.
+2025-04-01 15:15:14,823 - INFO - Finished the get lineup configs process.
+2025-04-01 15:15:14,828 - INFO - Finished the get_lineup_folders process.
+2025-04-01 15:15:14,829 - INFO - Finished the get_lineups process.
+2025-04-01 15:15:14,829 - INFO - Finished the get_logs process.
+2025-04-01 15:15:14,830 - INFO - Finished the pools process.
+2025-04-01 15:15:14,830 - INFO - Finished the get_resources process.
+2025-04-01 15:15:14,831 - INFO - Finished the get_sources process.
+2025-04-01 15:15:14,832 - INFO - Finished the post_lineup_config process.
+2025-04-01 15:15:14,832 - INFO - Finished the post_lineup_folders process.
+2025-04-01 15:15:14,832 - INFO - Finished the post_lineups process.
+2025-04-01 15:15:14,833 - INFO - Finished the post_pools process.
+2025-04-01 15:15:14,833 - INFO - Finished the put_lineups process.
+2025-04-01 15:15:14,834 - INFO - Finished the put_lineup_config process.
+2025-04-01 15:15:14,834 - INFO - Finished the put_lineup_folders process.
+2025-04-01 15:15:14,835 - INFO - Finished the put_pools process.
