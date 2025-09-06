@@ -1,0 +1,28 @@
+
+  .help-table {
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: auto;
+  }
+  
+  .table-header {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .help-link {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .help-table {
+      width: 90%;
+    }
+
+    .table-header {
+      font-size: 14px;
+    }
+  }
+  
