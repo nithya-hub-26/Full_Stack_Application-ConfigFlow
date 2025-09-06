@@ -1,4 +1,0 @@
-2025-02-18 16:44:50,385 - INFO - Starting the get_lineups process.
-2025-02-18 16:44:50,385 - INFO - Sending GET request to URL: https://10.90.35.221:8443/vsm/lineups
-2025-02-18 16:44:51,457 - WARNING - Unauthorized access. Status: 401. Regenerating token...
-2025-02-18 16:44:51,457 - INFO - Sending POST request to URL: https://10.90.35.221:8443/vsm/authenticate

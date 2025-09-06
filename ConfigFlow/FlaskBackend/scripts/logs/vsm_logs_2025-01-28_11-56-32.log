@@ -1,7 +1,0 @@
-2025-01-28 11:56:32,195 - INFO - Starting the get_lineups process.
-2025-01-28 11:56:32,197 - INFO - Sending GET request to URL: https://10.169.22.17:8443/vsm/lineups
-2025-01-28 11:56:33,809 - WARNING - Unauthorized access. Status: 401. Regenerating token...
-2025-01-28 11:56:33,810 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/authenticate
-2025-01-28 11:56:35,490 - INFO - New custom token generated successfully.
-2025-01-28 11:56:35,492 - INFO - Custom token saved to token.txt.
-2025-01-28 11:56:35,492 - INFO - Finished the get_lineups process.

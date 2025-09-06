@@ -1,5 +1,0 @@
-2025-05-16 15:40:03,710 - INFO - Starting the generate_token process.
-2025-05-16 15:40:03,722 - INFO - Sending POST request to URL: https://10.169.22.17:8443/vsm/authenticate
-2025-05-16 15:40:05,675 - INFO - New custom token generated successfully.
-2025-05-16 15:40:05,676 - INFO - Custom token saved to token.txt.
-2025-05-16 15:40:05,683 - INFO - Finished the generate_token process.
